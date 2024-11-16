@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Shantell Sans', cursive;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #f0f8ff;
+}
+
+.container h1 {
+    color: #f0f8ff;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.busca-container {
+    margin-block: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busca {
+    border: none;
+    outline: none;
+    background-color: #444;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: #e0e0e0;
+    font-size: 20px;
+    line-height: 40px;
+    transition: width 1s, background-color 0.3s;
+}
+
+.busca:focus {
+    background-color: #fff;
+    color: #444;
+}
+
+.busca:hover {
+    width: 30%;
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.card {
+    max-width: 300px;
+    padding: 20px;
+    color: #222;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.type {
+    color: #615e5e;
+    padding-top: 5px;
+    position: relative;
+    top: 45px;
+    transition: top 1s;
+    font-size: 1.25rem;
+}
+
+.card:hover .type {
+    cursor: pointer;
+    top: 0;
+}
+
+.fire {
+    background-color: #ff4e09; 
+}
+
+.grass {
+    background-color: aquamarine;
+}
+
+.water {
+    background-color: #282c34;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+.water .type {
+    color: white;
+}
+
+.bug {
+    background-color: #f8d5a3;
+}
+
+.normal {
+    background-color: white;
+}
+
+.electric {
+    background-color: #f2eac6;
+}
+
+.ground {
+    background-color: #eeab9d;
+}
+
+.poison {
+    background-color: #b1e9bc;
+}
+
+.fairy {
+    background-color: #f1ddf5;
+}
